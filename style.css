@@ -173,3 +173,38 @@ button {
     height: 50px;
     padding: 0%
 }
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top_bar {
+        .top_bar {
+        flex-direction: column;
+        text-align: center;
+        z-index: 2; /* Set a higher z-index to make sure it appears above other elements */
+    }
+    }
+
+    .search_bar {
+        width: 80%; /* Adjust the width of the search bar for better visibility on mobile */
+    }
+
+    .middle_left {
+        position: static; /* Remove absolute positioning for the product grid */
+        top: 0;
+        margin-top: 20px; /* Add margin to separate the product grid from the top bar */
+    }
+
+    .product {
+        width: 90%; /* Make the products take up the full width on mobile */
+        height: auto; /* Adjust height based on content */
+        margin: 10px; /* Add margin for better spacing between products */
+    }
+
+    .cart {
+        width: 100%; /* Make the cart take up the full width on mobile */
+        top: 80px; /* Adjust top position based on your layout */
+        right: 0;
+    }

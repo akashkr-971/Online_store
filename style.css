@@ -67,13 +67,20 @@ body{
 .nav_bar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
+    justify-content:space-evenly;
+    height: 50px;
+    width: 180px;
+    margin: 0;
+    padding: 0;
 }
-.nav_bar li,ul{
+.nav_bar li{
     list-style: none;
     display: flex;
     align-items: center;
+    margin: 20px;
+}
+.nav_bar a{
+    -webkit-tap-highlight-color: transparent;
 }
 
 .middle_left{
@@ -118,6 +125,7 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
+    -webkit-tap-highlight-color:transparent;
 }
 .cart_image{
     height: 40px;
@@ -136,7 +144,7 @@ button {
     background: none;
 }
 .cart{
-    display:none;
+    display:flex;
     position: absolute;
     height: 500px;
     width: 300px;
@@ -144,6 +152,9 @@ button {
     top: 80px;
     right: 0;
     flex-direction: column;
+}
+.cart-hidden{
+    display: none;
 }
 .mid_top{
     display: flex;
@@ -223,9 +234,9 @@ button {
     .nav_bar{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin :0;
         padding-top: 5px;
+        width: 150px;
     }
-
 }

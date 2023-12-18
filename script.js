@@ -20,11 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function Opencart() {
         console.log("clicked");
-        if (cart.style.display =='none'){
-            cart.style.display = 'flex';
-        } else {
-            cart.style.display = 'none';
-        }
+        cart.classList.toggle('cart-hidden')
     }
 
     function addcartItem(event){
@@ -41,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateCartUI(){
         
     }
-
+    cart.classList.toggle('cart-hidden')
     document.querySelector('.cart_button').addEventListener('click',Opencart);
     document.querySelector('.search_bar').addEventListener('input', searchProducts);
 

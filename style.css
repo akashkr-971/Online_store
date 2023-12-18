@@ -68,18 +68,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 60px;
 }
-.nav_bar li{
+.nav_bar li,ul{
     list-style: none;
-    margin: 30px;
-    
-}
-.nav_bar li a{
-    text-decoration: none;
-    font-size: 18px;
-    color:blue;
-    font-weight: 700;
-    
+    display: flex;
+    align-items: center;
 }
 
 .middle_left{
@@ -88,9 +82,8 @@ body{
     height:100%;
     width:100%;
     display: grid;
-    
-    
 }
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -130,20 +123,20 @@ button {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+
 }
 .user_image{
     height: 40px;
     width: 40px;
     background-color: #ffffff;
     border-radius: 50%;
-    margin-top: 10px;
+    margin: 0;
 }
 .cart_button{
     background: none;
-    padding-top :10;
 }
 .cart{
-    display: none;
+    display:none;
     position: absolute;
     height: 500px;
     width: 300px;
@@ -154,7 +147,7 @@ button {
 }
 .mid_top{
     display: flex;
-    height: 80px;
+    height: 60px;
     width: 100%;
     background-color: chartreuse;
     justify-content: center;
@@ -162,6 +155,7 @@ button {
 }
 .mid_mid{
     display: flex;
+    height: 390px;
 }
 .mid_bot{
     position: absolute;
@@ -173,6 +167,9 @@ button {
     width: 100%;
     height: 50px;
     padding: 0%
+}
+.name{
+    margin:0;
 }
 @media only screen and (max-width: 600px) {
     body {

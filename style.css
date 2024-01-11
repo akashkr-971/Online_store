@@ -144,7 +144,7 @@ button {
     background: none;
 }
 .cart{
-    display:flex;
+    display:none;
     position: absolute;
     height: 500px;
     width: 300px;
@@ -152,9 +152,6 @@ button {
     top: 80px;
     right: 0;
     flex-direction: column;
-}
-.cart-hidden{
-    display: none;
 }
 .mid_top{
     display: flex;

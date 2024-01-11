@@ -344,6 +344,11 @@
                 }
             });
         }
+        function cartcloseclickoutside(event) {
+            if (event.target.closest('.cart') && event.target !== 'order_button') {
+                cart.classList.add('cart-hidden');
+            }
+        }
 
         function Opencart() {
             console.log("clicked");
@@ -367,7 +372,7 @@
         cart.classList.toggle('cart-hidden')
         document.querySelector('.cart_button').addEventListener('click',Opencart);
         document.querySelector('.search_bar').addEventListener('input', searchProducts);
-
+        document.addEventListener('click',cartcloseclickoutside)
         document.querySelectorAll('.cart-button').forEach(function(button) {
             button.addEventListener('click', addcartItem);
         });
